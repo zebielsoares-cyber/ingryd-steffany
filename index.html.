@@ -1,3 +1,53 @@
+import turtle
+import time
+
+# Configuração da janela
+janela = turtle.Screen()
+janela.title("Uma surpresa para você! ❤️")
+janela.bgcolor("#121212")
+janela.setup(width=600, height=600)
+
+t = turtle.Turtle()
+t.speed(3)
+t.hideturtle()
+
+# Função para desenhar o contorno do coração
+def desenha_coracao():
+    t.pensize(3)
+    t.color("#E63946", "#FF4D6D")
+    t.begin_fill()
+    t.left(140)
+    t.forward(180)
+    t.circle(-90, 200)
+    t.setheading(60)
+    t.circle(-90, 200)
+    t.forward(180)
+    t.end_fill()
+
+# Posição inicial do desenho
+t.penup()
+t.goto(0, -120)
+t.pendown()
+
+# Desenha o coração
+desenha_coracao()
+
+# Escreve o nome no centro do coração
+# TROQUE "NOME DELA" PELO NOME DA SUA NAMORADA ABAIXO:
+nome_namorada = "INGRYD"
+
+t.penup()
+t.goto(0, -10)
+t.color("white")
+t.write(nome_namorada, align="center", font=("Arial", 22, "bold"))
+
+# Escreve uma mensagem carinhosa na parte inferior
+t.goto(0, -220)
+t.color("#FF8FA3")
+t.write("Você é muito especial para mim! ❤️", align="center", font=("Arial", 14, "italic"))
+
+# Mantém a janela aberta até que ela clique
+janela.exitonclick()
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
