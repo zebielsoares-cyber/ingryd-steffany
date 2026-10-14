@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para você! ❤️</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #FF4D6D;
+            font-size: 28px;
+        }
+        p {
+            color: #FF8FA3;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .coracao {
+            font-size: 80px;
+            color: #E63946;
+            animation: pulsar 1.5s infinite;
+        }
+        @keyframes pulsar {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="coracao">❤️</div>
+    <h1>NOME DELA</h1>
+    <p>Você é muito especial para mim! ❤️</p>
+</body>
+</html>
